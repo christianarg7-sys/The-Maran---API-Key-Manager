@@ -2,12 +2,15 @@
 
 echo "🚀 Instalando The Maran..."
 
-mkdir -p ~/the_maran
-cp the_maran/api_manager.py ~/the_maran/
+INSTALL_DIR="$HOME/the_maran"
 
-chmod +x ~/the_maran/api_manager.py
+mkdir -p "$INSTALL_DIR"
+
+cp "$(dirname "$0")/the_maran/api_manager.py" "$INSTALL_DIR/"
+
+chmod +x "$INSTALL_DIR/api_manager.py"
 
 echo ""
-echo "✅ Instalado"
+echo "✅ Instalado correctamente"
 echo "👉 Ejecutar:"
 echo "python3 ~/the_maran/api_manager.py"
