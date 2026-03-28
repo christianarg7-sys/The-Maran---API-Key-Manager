@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "base_url": "https://openrouter.ai/api/v1",
+      "models": ["mistralai/mistral-7b-instruct:free"],
+      "api_keys": [
+        {"key": "sk-xxxx"}
+      ]
+    }
+  ]
+}
